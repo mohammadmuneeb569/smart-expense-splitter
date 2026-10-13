@@ -1,8 +1,12 @@
 {
-  "name": "smart-expense-splitter-root",
+  "name": "smart-expense-splitter",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "build": "cd server && npm install",
     "start": "cd server && node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
