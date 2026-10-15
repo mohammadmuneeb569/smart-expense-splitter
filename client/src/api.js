@@ -1,11 +1,12 @@
+
 import axios from 'axios';
 
-const api = axios.create({
-  baseURL: '/api',
-  headers: {
-    'Content-Type': 'application/json',
-  },
+const API = axios.create({
+  baseURL: 'https://smart-expense-splitter-14oz.vercel.app/api',
 });
+
+export default API;
+
 
 // Request interceptor — attach JWT token to every request
 api.interceptors.request.use(
@@ -33,4 +34,3 @@ api.interceptors.response.use(
   }
 );
 
-export default api;
